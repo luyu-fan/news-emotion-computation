@@ -45,15 +45,15 @@ a. 对不同词嵌入大小进行训练后，词嵌入大小为64取得的效果
 b. TextCNN比LSTM好。  
 c. TextCNN中的超参是实验调出来的，相对于当前的数据量来说是最好的。  
 对语料中的单词数进行统计,90%左右的文章单词数都小于800.
-![Seq-Length](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/words_length.png)
+![Seq-Length](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/words_length.png)
 依然存在的问题：经过很长时间的训练调参之后，模型在验证集合上的损失始终无法下降到2一下，利用sklearn库进行对比实验产生的效果还不如神经网络。
 对每一篇文章得到的词嵌入进行降维，得到的结果如下：
-![训练数据集](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/myplot_tsne_train.png)  
-![测试数据就](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/myplot-tsne_valid.png) 
+![训练数据集](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/myplot_tsne_train.png)  
+![测试数据就](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/myplot-tsne_valid.png) 
 共有6000条用于训练的样本，可以看到几乎各个标注分数区间的样本分布的区域都是一样的，几乎很难区分开，样本分布是混乱的，而不是在一个曲面上。训练过程中的损失如下图所示，如果样本量增加之后或许会得到更好的结果。
-![训练损失](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/regression_loss.png)  
+![训练损失](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/regression_loss.png)  
 a. Sklearn库训练得到的误差统计
-![ML方法](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/myplot-ml.png)
+![ML方法](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/myplot-ml.png)
 b. 神经网络回归模型得到的误差统计
-![神经网络回归](https://github.com/luyu-fan/news-emotion-computation/tree/master/figures/regression_error.png)
+![神经网络回归](https://github.com/luyu-fan/news-emotion-computation/raw/master/figures/regression_error.png)
 
